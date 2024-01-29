@@ -2,19 +2,19 @@ const CATALOG = [
   {
     id: 'el1',
     name: 'FENDER SQUIER BULLET STRAT HT HSS BLK',
-    image: 'https://i.ibb.co/QJfqs4K/1.jpg',
-    price: 15000,
+    img: 'https://i.ibb.co/QJfqs4K/1.jpg',
+    price: 13600,
   },
   {
     id: 'el2',
     name: 'FENDER SQUIER AFFINITY',
-    image: 'https://i.ibb.co/pKrG5ZJ/2.jpg',
-    price: 23800,
+    img: 'https://i.ibb.co/pKrG5ZJ/2.jpg',
+    price: 23900,
   },
   {
     id: 'el3',
     name: 'IBANEZ GIO GRG121DX-BKF BLACK FLAT',
-    image: 'https://i.ibb.co/NnvcYhR/3.jpg',
+    img: 'https://i.ibb.co/NnvcYhR/3.jpg',
     price: 21600,
   },
   {
@@ -60,3 +60,5 @@ const CATALOG = [
     price: 15990,
   }
 ];
+
+
