@@ -60,5 +60,3 @@ const CATALOG = [
     price: 15990,
   }
 ];
-
-
