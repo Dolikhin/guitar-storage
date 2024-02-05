@@ -48,7 +48,7 @@ color: var(--color-umaccent);
 
 .products-element__btn_active {
   border: 1px solid transparent;
-  background-image: var(--linear-gradienar);
+  background-image: var(--linear-gradient);
 }
 
 
