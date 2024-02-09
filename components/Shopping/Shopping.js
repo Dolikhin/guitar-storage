@@ -35,7 +35,7 @@ class Shopping {
     `;
 
     ROOT_SHOPPING.innerHTML = html;
-    console.log('2222');
+    
   }
 }
 
