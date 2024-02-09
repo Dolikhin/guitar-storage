@@ -1,5 +1,5 @@
 class Header {
-  handlerOpenShopingPage() {
+  handlerOpenShoppingPage() {
     shoppingPage.render();
     console.log('dfhdfkjdf')
   }

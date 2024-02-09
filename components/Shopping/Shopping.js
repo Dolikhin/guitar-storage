@@ -1,11 +1,15 @@
 class Shopping {
+  handleClear() {
+    ROOT_SHOPPING.innerHTML = '';
+  }
 
   render() {
     
     const productsStore = localStorageUtil.getProducts();
     let htmlCatalog = '';
+    let sumCatalog = 0;
 
-    htmlCatalog.forEach(({ id, name, price }) => {
+    CATALOG.forEach(({ id, name, price }) => {
       if (productsStore.indexOf(id) !== -1) {
         htmlCatalog+=`
           <tr>
@@ -13,13 +17,19 @@ class Shopping {
             <td class="shopping-element__price">${price.toLocaleString()} USD</td>
           </tr>
         `;
+        sumCatalog += price;
       }  
     });
 
     const html = `
       <div class="shopping-container">
-        <table>
+      <div class="shopping__close" onclick="shoppingPage.handleClear();"></div>
+      <table>
           ${htmlCatalog}
+          <tr>
+            <td class="shopping-element__name">💥 Сумма:</td>
+            <td class="shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
+          </tr>
         </table>
       </div>
     `;
@@ -30,8 +40,8 @@ class Shopping {
 }
 
 const shoppingPage = new Shopping();
-shoppingPage.render();
-console.log('5555');
+
+
 // class Shopping {
 //   handleClear() {
 //     ROOT_SHOPPING.innerHTML = '';
