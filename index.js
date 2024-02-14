@@ -18,14 +18,15 @@ fetch('server/catalog.json')
   .then(body => {
     CATALOG = body;
     
-    setInterval(() => {
+    // setInterval(() => {
       spinnerPage.handleClear();
       render();
-    }, 1000);
+    // }, 1000);
     
     
   })
   .catch(error => {
-    vonsole.log(error);
+    spinnerPage.handleClear();
+    errorPage.render();
   });
 
