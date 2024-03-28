@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "http-server": "^14.1.1"
-  }
+  },
+  "name": "guitar",
+  "version": "1.0.0",
+  "description": "Guitar stire",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "serve": "http-server src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dolikhin/guitar-storage.git"
+  },
+  "keywords": [
+    "store"
+  ],
+  "author": "Dolikhin Dmitii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dolikhin/guitar-storage/issues"
+  },
+  "homepage": "https://github.com/Dolikhin/guitar-storage#readme"
 }
